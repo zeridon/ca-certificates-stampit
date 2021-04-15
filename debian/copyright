@@ -8,15 +8,7 @@ Copyright: 2017 StampIT Support <support@mail.stampit.org>
 License: PUBLIC
 Comment: https://stampit.org/document/864
 
-Files: README.md
-Copyright: 2021 Vladimir Vitkov <vvitkov@gmail.com>
-License: GPL-3.0+
-
-Files: Makefile
-Copyright: 2021 Vladimir Vitkov <vvitkov@gmail.com>
-License: GPL-3.0+
-
-Files: debian/*
+Files: *
 Copyright: 2021 Vladimir Vitkov <vvitkov@gmail.com>
 License: GPL-3.0+
 
