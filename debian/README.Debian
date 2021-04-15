@@ -1,0 +1,4 @@
+System administrator may need to activate StampIT certificates using the
+following command:
+
+    sudo dpkg-reconfigure ca-certificates
