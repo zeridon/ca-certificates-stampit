@@ -1,3 +1,9 @@
+ca-certificates-stampit (20210714) unstable; urgency=medium
+
+  * Fix issues with debian/copyright
+
+ -- Vladimir Vitkov <vvitkov@gmail.com>  Wed, 14 Jul 2021 15:48:42 +0300
+
 ca-certificates-stampit (20170514) unstable; urgency=medium
 
   * Initial Release.

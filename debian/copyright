@@ -3,14 +3,14 @@ Upstream-Name: ca-certificates-stampit
 Upstream-Contact: StampIT Supoort <support@mail.stampit.org>
 Source: <https://stampit.org/bg/page/814>
 
+Files: *
+Copyright: 2021 Vladimir Vitkov <vvitkov@gmail.com>
+License: GPL-3.0+
+
 Files: *.crt
 Copyright: 2017 StampIT Support <support@mail.stampit.org>
 License: PUBLIC
 Comment: https://stampit.org/document/864
-
-Files: *
-Copyright: 2021 Vladimir Vitkov <vvitkov@gmail.com>
-License: GPL-3.0+
 
 License: GPL-3.0+
  This program is free software: you can redistribute it and/or modify
