@@ -1,0 +1,63 @@
+# This is an example nfpm configuration file.
+# Make sure to check the documentation at https://nfpm.goreleaser.com
+#
+# The lines below are called `modelines`. See `:help modeline`
+# Feel free to remove those if you don't want/need to use them.
+# yaml-language-server: $schema=https://nfpm.goreleaser.com/static/schema.json
+# vim: set ts=2 sw=2 tw=0 fo=cnqoj
+
+name: "ca-certificates-stampit"
+arch: "all"
+platform: "linux"
+version: "20250207"
+version_schema: none
+release: 1
+section: "misc"
+priority: "optional"
+
+maintainer: "Vladimir Vitkov <vvitkov@gmail.com>"
+description: |
+  StampIT.org root certificates
+   This package provides StampIT.org (sub-)root certificates in PEM format.
+   Root certificates allow SSL-based applications to check for the
+   authenticity of certificates issued by the StampIT authority.
+   .
+   StampIT.org is a Bulgarian official eID issuer with full eIDAS compliance.
+
+homepage: "https://stampit.org"
+
+license: "MIT"
+
+depends:
+  - ca-certificates
+recommends:
+  - ca-certificates-bulgaria
+provides:
+  - ca-certificates-stampit
+
+disable_globbing: false
+
+contents:
+  - src: debian/README.Debian
+    dst: /usr/share/doc/ca-certificates-stampit/README
+  - src: debian/copyright
+    dst: /usr/share/doc/ca-certificates-stampit/copyright
+  - src: ./*.crt
+    dst: /usr/share/pki/trust/anchors/
+    packager: rpm
+  - src: ./*.crt
+    dst: /usr/share/ca-certificates/stampit/
+    packager: deb
+
+deb:
+  triggers:
+    activate_noawait:
+      - update-ca-certificates-fresh
+
+rpm:
+  group: "Productivity/Networking/Security"
+  summary: "StampIT root certificates"
+  prefixes:
+    - /
+
+changelog: "changelog.yml"

@@ -1,21 +1,15 @@
+ca-certificates-stampit (20250207) unstable ; urgency=medium
+
+  * Add nfpm tooling
+  * Add rpm spec file
+
+ -- Vladimir Vitkov <vvitkov@gmail.com>  Fri, 07 Feb 2025 15:39:51 +0200
+
 ca-certificates-stampit (20240806) unstable; urgency=medium
 
   * Add triggers file to auto refresh certs
 
  -- Vladimir Vitkov <vvitkov@gmail.com>  Tue, 06 Aug 2024 17:29:00 +0300
-
-ca-certificates-stampit (20240222) unstable; urgency=medium
-
-  * Update build tooling
-
- -- Vladimir Vitkov <vvitkov@gmail.com>  Thu, 22 Feb 2024 13:04:26 +0200
-
-ca-certificates-stampit (20210714) unstable; urgency=medium
-
-  * Bump version for consistency
-  * Fix issues with debian/copyright
-
- -- Vladimir Vitkov <vvitkov@gmail.com>  Wed, 14 Jul 2021 17:44:43 +0300
 
 ca-certificates-stampit (20170514) unstable; urgency=medium
 
