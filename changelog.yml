@@ -1,0 +1,35 @@
+- semver: 20240806
+  date: 2024-08-06T17:41:54+03:00
+  packager: Vladimir Vitkov <vvitkov@gmail.com>
+  changes:
+    - commit: b2abf42845525c590f38d5a2c82dfe988b65e0a9
+      note: |-
+        New release
+
+        Add support for triggering update-ca-certificates to autoinstall the certs
+      author:
+        name: Vladimir Vitkov
+        email: vvitkov@gmail.com
+      committer:
+        name: Vladimir Vitkov
+        email: vvitkov@gmail.com
+- semver: 20240222
+  date: 2024-02-22T14:01:36+02:00
+  packager: Vladimir Vitkov <vvitkov@gmail.com>
+  changes:
+    - commit: c88307a9d3b4364ad81305f87c71bb1881f29e34
+      note: Debian packaging
+      author:
+        name: Vladimir Vitkov
+        email: vvitkov@gmail.com
+      committer:
+        name: Vladimir Vitkov
+        email: vvitkov@gmail.com
+    - commit: 74460d0b7cb67793d11cee5968739dc597199cad
+      note: Basic files
+      author:
+        name: Vladimir Vitkov
+        email: vvitkov@gmail.com
+      committer:
+        name: Vladimir Vitkov
+        email: vvitkov@gmail.com
